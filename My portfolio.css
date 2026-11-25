@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f0f4f8;
+    color: #222;
+}
+
+
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.home img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #172554;
+}
+
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+section h1 {
+    color: #172554;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.project {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.card:hover,
+.project:hover {
+    background-color: #dbeafe;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #172554;
+}
+
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        padding: 25px;
+    }
+
+    .home img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    .card,
+    .project {
+        width: 100%;
+    }
+}
